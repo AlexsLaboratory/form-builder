@@ -9,7 +9,7 @@
       "@shared/*": ["app/shared/*"],
       "@components/*": ["app/components/*"],
       "@env/*": ["app/environment/*"],
-      "@modules/*": ["app/modules/*"],
+      "@pages/*": ["app/pages/*"],
       "@data/*": ["app/data/*"],
       "@layout/*": ["app/layout/*"],
     },
