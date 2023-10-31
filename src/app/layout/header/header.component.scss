@@ -1,22 +1,27 @@
 .primary-header {
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template:
+                "title navigation menu" / min-content 3fr min-content;
   align-items: center;
+  align-content: space-between;
   padding: 2rem 4rem;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
   background-color: lightgray;
 
   .primary-navigation {
-    display: flex;
-    align-items: center;
+    .account-dropdown-menu {
+      grid-area: menu;
+    }
   }
 
   &__title {
-    margin-right: auto;
+    white-space: nowrap;
+    grid-area: title;
     font-size: 1.5rem;
   }
 
   .navigation-list {
+    grid-area: navigation;
     li {
       list-style: none;
       display: inline-block;
