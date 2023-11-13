@@ -1,0 +1,35 @@
+:host {
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) 2fr;
+  grid-template-rows: minmax(250px, 1fr) 2fr;
+  grid-template-areas:
+    "form-elements form-preview"
+    "form-elements form-preview";
+}
+.input-options {
+  padding: 0;
+  list-style-type: none;
+
+  .input-item {
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 1rem .5rem;
+    background-color: lightgray;
+    font-weight: bold;
+    cursor: copy;
+
+    &-content {
+      display: none;
+    }
+  }
+}
+
+.sidebar-container {
+  border: 1px solid black;
+  grid-area: form-elements;
+}
+
+.form-preview-container {
+  border: 1px solid black;
+  grid-area: form-preview;
+}
